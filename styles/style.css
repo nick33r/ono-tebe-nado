@@ -1,6 +1,8 @@
+/* Верстка хедера */
+
 .header {
-  padding: 92px 24px 96px;
   min-height: 293px;
+  padding: 92px 24px 96px;
   font-size: 18px;
   line-height: 24.3px;
   background-color: #fff;
@@ -8,12 +10,11 @@
 
 .header__content {
   display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
   gap: 41px;
   width: 1052px;
   height: 105px;
-  grid-template-columns: repeat(7, 1fr);
-  justify-items: center;
-  align-items: center;
 }
 
 .header__menu {
@@ -49,7 +50,83 @@
 }
 
 .address {
-  font-style: normal;
   grid-column: 6 / -1;
   justify-self: start;
+  font-style: normal;
 }
+
+/* Входная секция с заголовком */
+
+.cover {
+  /* padding: 165px 50px 51px; */
+  background-image: url(../images/cover.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.overlay {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 165px 50px 51px;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* z-index: 1; */
+}
+
+.cover__title {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 122px;
+  letter-spacing: 0.3em;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
+  /* letter-spacing: ; */
+}
+
+.aligned-text_right {
+  display: block;
+  text-align: end;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  place-items: center;
+  justify-content: end;
+  gap: 79px;
+  margin-top: 126px;
+}
+
+.cover__description-text {
+  font-weight: 400;
+  font-size: 22px;
+  text-align: end;
+  word-spacing: 0.8em;
+}
+
+.bet-button {
+  border: solid 1px;
+  padding: 12px 32px 12px 31px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+/* Секция с лотами */
+
