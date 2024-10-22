@@ -134,3 +134,10 @@
 
 /* Секция с лотами */
 
+.lots {
+
+}
+
+.lots__heading {
+  text-transform: uppercase;
+}
