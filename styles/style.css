@@ -58,19 +58,24 @@
 /* Входная секция с заголовком */
 
 .cover {
-  /* padding: 165px 50px 51px; */
   background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  background-repeat: no-repeat; 
+  position: relative;
+  padding: 165px 50px 51px;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: -2;
 }
 
 .overlay {
-  color: #fff;
-  text-transform: uppercase;
-  padding: 165px 50px 51px;
   background-color: rgba(0, 0, 0, 0.6);
-  /* z-index: 1; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: -1;
 }
 
 .cover__title {
@@ -87,7 +92,6 @@
 .aligned-text_center {
   display: block;
   text-align: center;
-  /* letter-spacing: ; */
 }
 
 .aligned-text_right {
