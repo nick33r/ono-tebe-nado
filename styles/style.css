@@ -1,3 +1,35 @@
+/* Общие правила страницы */
+
+.list {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: 1;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px; 
+}
+
 /* Верстка хедера */
 
 .header {
@@ -34,12 +66,10 @@
 
 .header__link {
   text-decoration: underline;
-  text-underline-offset: 5px;
-  /* border-bottom: 1px solid; */
+  text-underline-offset: 4px;
 }
 
 .header__link_active {
-  /* border: none; */
   list-style: none;
   text-decoration: none;
 }
@@ -52,10 +82,9 @@
   width: 135px;
 }
 
-.address {
+.header__address {
   grid-column: 6 / -1;
   justify-self: start;
-  font-style: normal;
 }
 
 /* Секция с основным контентом */
@@ -71,15 +100,6 @@
   padding: 165px 50px 51px;
   text-transform: uppercase;
   color: #fff;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  z-index: 1;
 }
 
 .above-the-overlay {
@@ -134,6 +154,7 @@
   font-size: 22px;
   text-align: end;
   word-spacing: 0.8em;
+  /* letter-spacing: 0.09em; */
 }
 
 .bet-button {
@@ -158,13 +179,6 @@
 .lots__heading {
   margin-left: 40px;
   margin-bottom: 27px;
-}
-
-.heading {
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 47px;
 }
 
 .lots__card-list {
@@ -228,12 +242,6 @@
   color: #fff;
 }
 
-.text {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px; 
-}
-
 .lots__look-more-link {
   font-size: 20px;
   font-weight: 400;
@@ -251,12 +259,8 @@
   place-items: start;
   gap: 72px;
   padding: 35px 24px 35px 71px;
-  min-height: 775px;
+  min-height: 761px;
   background-color: #fff;
-}
-
-.about__column {
-
 }
 
 .about__logo {
@@ -298,3 +302,52 @@
 
 /* Футер */
 
+.footer {
+  min-height: 200px;
+  padding: 14px 50px 88px;
+  font-size: 18px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__address {
+  line-height: 24.3px;
+}
+
+.footer__menu {
+  text-align: center;
+}
+
+.footer__menu-link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  line-height: 21px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  justify-content: end;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.yt-icon {
+  background-image: url(../images/yt.svg);
+}
+
+.vk-icon {
+  background-image: url(../images/vk.svg);
+}
+
+.pinterest-icon {
+  background-image: url(../images/pinterest.svg);
+}
