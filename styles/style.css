@@ -175,9 +175,9 @@
 /* Секция с лотами */
 
 .lots {
-  align-content: center;
+  /* align-content: center; */
   min-height: 1017px;
-  padding: 57px 24px 28px;
+  padding: 179px 24px 28px;
   background-color: #fff;
 }
 
