@@ -11,38 +11,37 @@
   </head>
   <body>
     <header class="header header-text">
-      <div class="header__content">
-        <nav class="header__menu">
-          <ul class="header__links-list">
-            <li class="header__links-list-item header__link_active">
-              <a class="header__link header__link_active" href="#0">главная</a>
-            </li>
-            <li class="header__links-list-item">
-              <a class="header__link" href="#0">посмотреть лоты</a>
-            </li>
-            <li class="header__links-list-item">
-              <a class="header__link" href="#0">об аукционе</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="header__logo">
-          <img
-            class="header__logo-image"
-            src="./images/logo-black.svg"
-            alt="Логотип Оно тебе надо"
-          />
-        </a>
-        <address class="address header__address">
-          <a class="phone-number header__link" href="tel:+99995555555"
-            >+9 999 555 5555</a
-          ><br />
-          <a class="mailto header__link" href="mailto:info@sobaka.ge"
-            >info@sobaka.ge</a
-          ><br />
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__link_active">
+            <a class="link-underline" href="#0">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="link-underline" href="#0">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="link-underline" href="#0">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__logo">
+        <img
+          class="header__logo-image"
+          src="./images/logo-black.svg"
+          alt="Логотип Оно тебе надо"
+        />
+      </a>
+      <address class="address header__address">
+        <a class="link-underline" href="tel:+99995555555">+9 999 555 5555</a
+        ><br />
+        <a class="link-underline" href="mailto:info@sobaka.ge"
+          >info@sobaka.ge</a
+        >
+        <p>
           наб. Принсенграхт 263-<br />
           265, Амстердам
-        </address>
-      </div>
+        </p>
+      </address>
     </header>
 
     <main class="main">
@@ -63,10 +62,12 @@
           >
         </h1>
         <div class="cover__description above-the-overlay">
-          <h2 class="cover__description-text">
+          <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
-          </h2>
-          <button name="bet-button" class="bet-button bet-button-text">Сделать ставку</button>
+          </p>
+          <button type="button" class="bet-button bet-button-text">
+            Сделать ставку
+          </button>
         </div>
       </section>
 
@@ -77,7 +78,7 @@
             <a class="card-link" href="#0">
               <article class="card card_type_film">
                 <div class="overlay"></div>
-                <h3 class="card__title above-the-overlay">
+                <h3 class="card__title link-underline above-the-overlay">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
                 <p class="card__text text above-the-overlay">
@@ -92,7 +93,7 @@
             <a class="card-link" href="#0">
               <article class="card card_type_book">
                 <div class="overlay"></div>
-                <h3 class="card__title above-the-overlay">
+                <h3 class="card__title link-underline above-the-overlay">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
                 <p class="card__text text above-the-overlay">
@@ -110,7 +111,7 @@
             <a class="card-link" href="#0">
               <article class="card card_type_picture">
                 <div class="overlay"></div>
-                <h3 class="card__title above-the-overlay">
+                <h3 class="card__title link-underline above-the-overlay">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
                 <p class="card__text text above-the-overlay">
@@ -136,40 +137,41 @@
         </div>
         <div class="about__column">
           <h2 class="about__title heading">Об аукционе</h2>
-          <p class="about__text text">
-            <span class="letter-spacing-1"
-              >Здесь вы не встретите очередное пафосное собрание невероятно
+          <div class="about__text text">
+            <p class="letter-spacing-small">
+              Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
               или картина, которую может нарисовать даже ребёнок? Кому нужны все
-              эти странные вещи, созданные любителями?</span
-            >
-            <span
-              >Слишком сложные или, наоборот, слишком простые. Опережающие своё
+              эти странные вещи, созданные любителями?
+            </p>
+            <p>
+              Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то
-              <span class="letter-spacing-6">они</span> казались просто
-              <span class="letter-spacing-1">неудачными</span>. Но, несмотря на
-              критику, кажущуюся простоту или сложность, сейчас без этих лотов
-              невозможно представить современную культуру. Когда в эти вещи не
-              верил никто, продолжали верить их создатели. И сейчас эти лоты
-              стали культовыми.
-            </span>
-          </p>
+              <span class="letter-spacing-big">они</span> казались просто
+              <span class="letter-spacing-small">неудачными</span>. Но, несмотря
+              на критику, кажущуюся простоту или сложность, сейчас без этих
+              лотов невозможно представить современную культуру. Когда в эти
+              вещи не верил никто, продолжали верить их создатели. И сейчас эти
+              лоты стали культовыми.
+            </p>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <address class="address footer__address">
-        <a class="phone-number header__link" href="tel:+99995555555"
-          >+9 999 555 5555</a
+        <a class="link-underline" href="tel:+99995555555">+9 999 555 5555</a
         ><br />
-        <a class="mailto header__link" href="mailto:info@sobaka.ge"
+        <a class="link-underline" href="mailto:info@sobaka.ge"
           >info@sobaka.ge</a
-        ><br />
-        наб. Принсенграхт 263-<br />
-        265, Амстердам
+        >
+        <p>
+          наб. Принсенграхт 263-<br />
+          265, Амстердам
+        </p>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list list">
@@ -188,18 +190,30 @@
       </nav>
       <ul class="footer__social-list list">
         <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#0">
-            <div class="footer__social-icon yt-icon"></div>
+          <a class="footer__social-link" target="_blank" href="#0">
+            <img
+              class="footer__social-icon"
+              src="./images/yt.svg"
+              alt="Наш аккаунт в Ютуб"
+            />
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#0">
-            <div class="footer__social-icon vk-icon"></div>
+          <a class="footer__social-link" target="_blank" href="#0">
+            <img
+              class="footer__social-icon"
+              src="./images/vk.svg"
+              alt="Наш аккаунт во ВКонтакте"
+            />
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#0">
-            <div class="footer__social-icon pinterest-icon"></div>
+          <a class="footer__social-link" target="_blank" href="#0">
+            <img
+              class="footer__social-icon"
+              src="./images/pinterest.svg"
+              alt="Наш аккаунт в Пинтерест"
+            />
           </a>
         </li>
       </ul>
