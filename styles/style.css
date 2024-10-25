@@ -48,7 +48,6 @@
   place-items: center;
   gap: 41px;
   padding: 92px 24px 91px;
-  background-color: #fff;
 }
 
 .header-text {
@@ -175,7 +174,6 @@
 
 .lots {
   padding: 179px 24px 148px;
-  background-color: #fff;
 }
 
 .lots__heading {
@@ -249,7 +247,6 @@
   place-items: start;
   gap: 72px;
   padding: 35px 24px 180px 71px;
-  background-color: #fff;
 }
 
 .about__logo {
@@ -293,7 +290,6 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 0 50px 90px;
   font-size: 18px;
-  background-color: #fff;
 }
 
 .footer__address {
