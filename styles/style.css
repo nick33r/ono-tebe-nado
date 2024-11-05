@@ -72,7 +72,7 @@
   list-style: none;
 }
 
-.header__link_active .link-underline {
+.header__link_active .link {
   text-decoration: none;
 }
 
